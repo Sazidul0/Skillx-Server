@@ -12,7 +12,7 @@ app.use(express.json());
 
 
 
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@skillxcluster.kfshb.mongodb.net/?retryWrites=true&w=majority&appName=SkillxCluster`;
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@skillx.0t95w.mongodb.net/?retryWrites=true&w=majority&appName=skillx`;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -36,6 +36,10 @@ async function run() {
     }
 }
 run().catch(console.dir);
+
+
+
+
 
 
 
